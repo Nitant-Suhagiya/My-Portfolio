@@ -1,1 +1,282 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: #f0dea3;
+}
 
+@font-face {
+    font-family: 'aus';
+    src: URL('../Files/Aussiente.ttf') format('truetype');
+}
+
+#m1 {
+    margin-left: 225px;
+}
+
+#h2 {
+    color: grey;
+}
+
+#p {
+    color: grey;
+}
+
+#div {
+    margin-top: 10%;
+}
+
+.img1 {
+    object-fit: none;
+}
+
+.img2 {
+    object-fit: none;
+}
+
+.img3 {
+    margin-top: 30px;
+    object-fit: none;
+}
+
+.Title {
+    color: white;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.welcome {
+    margin: 2.5% 0 2.5% 5%;
+    font-size: 200%;
+    font-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.test-size {
+    display: inline-block;
+    padding: 10px 110px;
+    font-size: 0px;
+}
+
+.center {
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.grid-container {
+    display: grid;
+    grid: 450px / auto auto auto auto;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 75px;
+}
+
+.flip-box {
+    float: center;
+    border-radius: 20px;
+    margin-right: 20px;
+    background-color: transparent;
+    width: 300px;
+    height: 452px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-box-inner {
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    background-color: rgb(26, 44, 54);
+    color: black;
+}
+
+.flip-box-back {
+    background-color: white;
+    color: white;
+    transform: rotateX(180deg);
+}
+
+.sign {
+    font-family: 'aus', sans-serif;
+    font-size: 28px;
+    color: rgb(60, 178, 207);
+    position: absolute;
+    margin: 5% 5% 5% 5%;
+    bottom: 40px;
+}
+
+.button {
+    min-width: 80%;
+    width: 100%S;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: coral;
+    border: 2px solid coral;
+}
+
+.button1:hover {
+    background-color: coral;
+    color: white;
+}
+
+.Box {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(40 40 40 / 80%);
+}
+
+.ExpContainer {
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    min-width: 600px;
+    max-width: 1300px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Boxcontent {
+    line-height: 1;
+}
+
+.Boxleft {
+    width: 45%;
+    min-width: 170px;
+    float: left;
+    height: 375px;
+    margin: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+
+.Boxright {
+    position: relative;
+    top: 10px;
+    left: 15px;
+    width: 45%;
+    min-width: 170px;
+    float: left;
+    height: 400px;
+    line-height: 1.75;
+}
+
+.Boxheader {
+    font-size: 150%;
+    position: relative;
+    left: 2.5px;
+}
+
+.scroll {
+    margin: 0 0 0 0;
+    max-height: 260px;
+    height: 200px;
+    overflow: scroll;
+}
+
+.Boxbutton {
+    min-width: 200px;
+    padding: 10px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin: 2% 0%;
+    position: relative;
+    border-radius: 25px;
+    border: 2px solid rgb(75, 179, 205);
+    color: rgb(75, 179, 205);
+}
+
+.Boxbutton:hover {
+    background-color: rgb(75, 179, 205);
+    color: White;
+    border: 2px solid rgb(75, 179, 205);
+    border-radius: 25px;
+}
+
+.Cbuttob {
+    background-color: white;
+    color: rgb(75, 179, 205);
+    border: 2px solid rgb(75, 179, 205);
+    border-radius: 25px;
+}
+
+.Cbuttob:hover {
+    background-color: rgb(75, 179, 205);
+    color: white;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 50%;
+    max-height: 120px;
+    max-width: 120px;
+    min-height: 120px;
+    min-width: 120px;
+    padding: 0 0 0 0;
+    display: inline-block;
+    font-size: 75px;
+    margin: 5%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
